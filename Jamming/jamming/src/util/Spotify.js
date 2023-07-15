@@ -1,5 +1,5 @@
-const clientId = ''; // Insert client ID here.
-const redirectUri = 'https://jamminglaur.netlify.app'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
+const clientId = 'a4a74aeaf6174df7a5ce0978392ff9af'; // Insert client ID here.
+const redirectUri = 'https://jammlaur.netlify.app'; // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 let accessToken;
 
 const Spotify = {
