@@ -29,13 +29,14 @@ h2 {
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  background-image: url('./3.jpg');
+  background-image: url('./Music-amico.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   color: #fff;
+  background-color: black;
 }
 
 .App-playlist {
