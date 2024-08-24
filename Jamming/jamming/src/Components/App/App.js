@@ -49,7 +49,7 @@ const App = (props) => {
   return (
     <div>
       <h1>
-        Ja<span className="highlight">mmm</span>ing
+        Spot<span className="highlight">ifyTun</span>ner
       </h1>
       <div className="App">
         <SearchBar  onSearch={search}/>

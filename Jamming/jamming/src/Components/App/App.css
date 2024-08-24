@@ -8,18 +8,37 @@ html {
   font-size: 18px;
 }
 
+
 h1 {
-  padding: .77rem 0;
-  background-color: #010c3f;
+  padding: 0.77rem 0;
+  background-color: black;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
+  font-size: 3rem;
   color: #fff;
+  position: relative;
+  overflow: hidden; 
 }
 
 h1 .highlight {
-  color: gold;
+  color: rgb(27, 226, 97);
+  position: relative;
+  animation: sparkle 2s infinite ease-in-out;
 }
+
+@keyframes sparkle {
+  0%, 100% {
+    color: rgb(29, 185, 84);
+    text-shadow: 0 0 5px rgba(29, 185, 84, 0.5), 
+                 0 0 10px rgba(29, 185, 84, 0.3);
+  }
+  30% {
+    color: rgb(50, 205, 100);
+    text-shadow: 0 0 10px rgba(50, 205, 100, 0.8), 
+                 0 0 20px rgba(50, 205, 100, 0.5);
+  }
+}
+
 
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -30,7 +49,7 @@ h2 {
   height: 100%;
   padding: 0 17% 10% 17%;
   background-image: url('./Music-amico.svg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
@@ -46,8 +65,30 @@ h2 {
 }
 
 @media only screen and (max-width: 1020px) {
+  .App {
+    padding: 0 10% 10% 10%; 
+    background-size: contain; 
+    width: auto; 
+    height: auto;
+  }
+
   .App-playlist {
     align-items: center;
     flex-direction: column;
+    width: 100%; 
+    padding: 0; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column; 
+    width: 100%; 
+    padding: 0; 
+  }
+  .App {
+    padding: 0 5% 10% 5%; 
+    background-size: contain; 
   }
 }
